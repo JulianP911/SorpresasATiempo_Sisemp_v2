@@ -13,6 +13,6 @@
 
 <strong>Link del visualizar el prototipo en SAP BUILD:</strong>
 <ul>
-<li>En el siguiente link se puede visualizar en vivo el prototipo construido para la empresa Sorpresas a Tiempo:<br>
+<li>En el siguiente link se puede visualizar en vivo el prototipo construido para la empresa <strong>Sorpresas a Tiempo:</strong><br>
 https://standard.build.me/prototype-editors/2ea571908d1886861653240f/prototype/6190512eed0c121ed2b5c976/ui-composer/19kvjrzboy9n2wkg6hy74uck5_S5</li>
 </ul>
