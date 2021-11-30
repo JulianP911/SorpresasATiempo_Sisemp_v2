@@ -1,0 +1,102 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipoDeAltaFidelidad.controller.DetailPage4" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <Page showHeader="true" title="Carga Imagen - Seguimiento Control de Calidad" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <ObjectListItem intro="HT-1000" title="Caja Sorpresa Mamá" icon="sap-icon://upload-to-cloud" number="79.000" numberUnit="COP" numberState="Success" type="Navigation" selected="true" showMarkers="false" press="_onObjectListItemPress">
+                <attributes>
+                    <ObjectAttribute title="Fecha de Actualización" text="Jun 22, 2021" active="false" visible="true"/>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus title="Aprobado" text="Jefe de Producción" state="Success" icon="sap-icon://checklist-item-2" visible="true"/>
+                </firstStatus>
+                <secondStatus/>
+            </ObjectListItem>
+            <form:Form width="100%" editable="true" visible="true">
+                <form:title>
+                    <core:Title text="Formulario para Adjuntar Imagen" level="Auto" icon="sap-icon://form"/>
+                </form:title>
+                <form:formContainers>
+                    <form:FormContainer visible="true">
+                        <form:formElements>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Fecha" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="LTR" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <Input placeholder="Nombre del Imagen" type="Date" showValueHelp="false" enabled="true" visible="true" width="60%" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Nombre Imagen" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="LTR" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <Input id="sap_Responsive_Page_0-content-build_simple_form_Form-1637545778519-formContainers-build_simple_form_FormContainer-1-formElements-build_simple_form_FormElement-1637876170621-fields-sap_m_Input-1" placeholder="Nombre del Imagen" type="Text" showValueHelp="false" enabled="true" visible="true" width="60%" valueHelpOnly="false" required="true" valueStateText="Entrada Invalida" maxLength="100"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Formato Imagen" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="LTR" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <ComboBox placeholder="Formato de la Imagen" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="60%">
+                                        <items>
+                                            <core:Item text="JPG" enabled="true" key="JPG"/>
+                                            <core:Item text="JPGE" enabled="true" key="JPGE"/>
+                                            <core:Item text="PNG" enabled="true" key="PNG"/>
+                                        </items>
+                                    </ComboBox>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="URL" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="LTR" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <Input placeholder="URL de la Imagen" type="Url" showValueHelp="false" enabled="true" visible="true" width="60%" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Verificación" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <Link text="Verificación de Formato Válido" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <CheckBox text="Almacenar en todos los documentos asociados" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <Button text="Cargar" type="Accept" icon="sap-icon://upload" iconFirst="true" width="250px" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                                </form:fields>
+                            </form:FormElement>
+                        </form:formElements>
+                        <form:title/>
+                    </form:FormContainer>
+                </form:formContainers>
+                <form:layout>
+                    <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                </form:layout>
+            </form:Form>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

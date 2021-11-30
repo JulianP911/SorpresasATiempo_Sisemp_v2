@@ -1,0 +1,144 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipoDeAltaFidelidad.controller.DetailPage3" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <Page showHeader="true" title="Actualizar Inventario - Producto" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <ObjectListItem intro="HT-1000" title="Caja Sorpresa Mamá" icon="sap-icon://upload-to-cloud" number="79.000" numberUnit="COP" numberState="Success" type="Navigation" selected="true" showMarkers="false" press="_onObjectListItemPress">
+                <attributes>
+                    <ObjectAttribute title="Fecha de Actualización" text="Jun 22, 2021" active="false" visible="true"/>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus title="Aprobado" text="Jefe de Producción" state="Success" icon="sap-icon://checklist-item-2" visible="true"/>
+                </firstStatus>
+                <secondStatus/>
+            </ObjectListItem>
+            <form:Form width="100%" editable="true" visible="true">
+                <form:title>
+                    <core:Title text="Formulario de Actualización" level="Auto" icon="sap-icon://form"/>
+                </form:title>
+                <form:formContainers>
+                    <form:FormContainer visible="true">
+                        <form:formElements>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Ref. Producto" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="LTR" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <ComboBox placeholder="Referencía del producto" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="50%">
+                                        <items>
+                                            <core:Item text="OS-1420" enabled="true" key="OS-1420"/>
+                                            <core:Item text="CH-9840" enabled="true" key="CH-9840"/>
+                                            <core:Item text="GL-2912" enabled="true" key="GL-2912"/>
+                                            <core:Item text="CM-2482" enabled="true" key="CM-2482"/>
+                                            <core:Item text="VN-9833" enabled="true" key="VN-9833"/>
+                                            <core:Item text="GV-1213" enabled="true" key="GV-1213"/>
+                                        </items>
+                                    </ComboBox>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Producto" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="LTR" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <ComboBox placeholder="Nombre del producto" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="50%">
+                                        <items>
+                                            <core:Item text="Peluche Oso Mediano" enabled="true" key="Peluche Oso Mediano"/>
+                                            <core:Item text="Chocolates Jet" enabled="true" key="Chocolates Jet"/>
+                                            <core:Item text="Globo Mediano Feliz" enabled="true" key="Globo Mediano Feliz"/>
+                                            <core:Item text="Canasta Mediana" enabled="true" key="Canasta Mediana"/>
+                                            <core:Item text="Botella Pequeña de Vino" enabled="true" key="Botella Pequeña de Vino"/>
+                                            <core:Item text="Galletas Variadas x2" enabled="true" key="Galletas Variadas x2"/>
+                                        </items>
+                                    </ComboBox>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Categoria" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="LTR" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <ComboBox placeholder="Categoría del producto" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="50%">
+                                        <items>
+                                            <core:Item text="Peluches" enabled="true" key="Peluches"/>
+                                            <core:Item text="Chocolates" enabled="true" key="Chocolates"/>
+                                            <core:Item text="Decoración" enabled="true" key="Decoración"/>
+                                            <core:Item text="Bebidas" enabled="true" key="Bebidas"/>
+                                            <core:Item text="Snacks" enabled="true" key="Snacks"/>
+                                            <core:Item text="Variados" enabled="true" key="Variados"/>
+                                        </items>
+                                    </ComboBox>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Cantidad" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="LTR" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <Input value="" placeholder="Cantidad del Producto" type="Number" description="Unidad / Unidades" showValueHelp="false" enabled="true" visible="true" width="50%" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Precio" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="LTR" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <Input placeholder="Precio Total" type="Number" description="COP" showValueHelp="false" enabled="true" visible="true" width="50%" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Área de Almacenamiento" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="LTR" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <ComboBox placeholder="Área de Almacenamiento" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="50%">
+                                        <items>
+                                            <core:Item text="Bodega Principal" enabled="true" key="Bodega Principal"/>
+                                            <core:Item text="Bodega Secundaria" enabled="true" key="Bodega Secundaria"/>
+                                        </items>
+                                    </ComboBox>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Verificación" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <Link text="Verificación de Almacenamiento" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <CheckBox text="Cambio aprovado por el área de compras" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                </form:label>
+                                <form:fields>
+                                    <Button text="Actualizar" type="Accept" icon="sap-icon://hr-approval" iconFirst="true" width="250px" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                                </form:fields>
+                            </form:FormElement>
+                        </form:formElements>
+                        <form:title/>
+                    </form:FormContainer>
+                </form:formContainers>
+                <form:layout>
+                    <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                </form:layout>
+            </form:Form>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

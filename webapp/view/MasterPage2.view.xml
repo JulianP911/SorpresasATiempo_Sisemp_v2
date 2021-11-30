@@ -1,0 +1,37 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipoDeAltaFidelidad.controller.MasterPage2" xmlns="sap.m">
+    <Page title="Lista de Productos" showHeader="true" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <List mode="SingleSelectMaster" width="100%" headerText="Header" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" visible="true" itemPress="_onObjectListItemPress" items="{path:'/ProductSet', templateShareable:true}">
+                <infoToolbar/>
+                <headerToolbar>
+                    <Toolbar enabled="true" visible="true" width="" design="Solid">
+                        <content>
+                            <SearchField placeholder="Search" showSearchButton="true" visible="true" width="100%"/>
+                        </content>
+                    </Toolbar>
+                </headerToolbar>
+                <items>
+                    <ObjectListItem intro="{ID}" title="{Name}" icon="{ProductImage}" number="{path: 'Price', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" numberUnit="{Currency}" numberState="None" type="Active" selected="false" showMarkers="false" press="_onObjectListItemPress1">
+                        <attributes>
+                            <ObjectAttribute title="Estado Actual" text="" active="false" visible="true"/>
+                            <ObjectAttribute text="Área:" active="false" visible="true"/>
+                            <ObjectAttribute title="N. del pedido" text="{PriceRange}" active="true" visible="true"/>
+                        </attributes>
+                        <firstStatus>
+                            <ObjectStatus text="{StockLevel}" state="None" visible="true"/>
+                        </firstStatus>
+                        <secondStatus>
+                            <ObjectStatus text="{StockLevelCC}" state="None" visible="true"/>
+                        </secondStatus>
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content/>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+    </Page>
+</mvc:View>

@@ -1,0 +1,47 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipoDeAltaFidelidad.controller.DetailPage5" xmlns="sap.m">
+    <Page showHeader="true" title="Imágenes cargadas - Producto" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <ObjectListItem intro="HT-1000" title="Caja Sorpresa Mamá" icon="sap-icon://image-viewer" number="79.000" numberUnit="COP" numberState="Success" type="Navigation" selected="true" showMarkers="false" press="_onObjectListItemPress">
+                <attributes>
+                    <ObjectAttribute title="Fecha de Actualización" text="Jun 25, 2021" active="false" visible="true"/>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus title="Encargado" text="Fernando Useche" state="Warning" icon="sap-icon://switch-classes" visible="true"/>
+                </firstStatus>
+                <secondStatus/>
+            </ObjectListItem>
+            <List mode="SingleSelectMaster" width="100%" headerText="Header" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" visible="true">
+                <infoToolbar>
+                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                        <content>
+                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </content>
+                    </Toolbar>
+                </infoToolbar>
+                <headerToolbar>
+                    <Toolbar enabled="true" visible="true" width="" design="Solid">
+                        <content>
+                            <SearchField placeholder="Buscador" showSearchButton="true" visible="true" width="100%"/>
+                        </content>
+                    </Toolbar>
+                </headerToolbar>
+                <items>
+                    <StandardListItem icon="sap-icon://vds-file" title="IM-1293" description="Imagen que muestra el estado actual de los materiales necesarios en el ensambaje del regalo sorpresa." info="Jun 22, 2021" infoState="Success" type="Active" selected="false" visible="true"/>
+                    <StandardListItem icon="sap-icon://vds-file" title="IM-2931" description="Imagen que muestra el estado la decoración de fresas con chocolate en perfecto estado y en su caja correspondiente." info="Jun 23, 2021" infoState="Success" type="Active" selected="false" visible="true"/>
+                    <StandardListItem icon="sap-icon://vds-file" title="IM-2139" description="Imagen que muestra el adorno florar realizado en el que se evidencia las flores en buen estado y sin marchitar." info="Jun 24, 2021" infoState="Success" type="Active" selected="false" visible="true"/>
+                </items>
+            </List>
+            <Carousel height="550px" width="auto" loop="true" showPageIndicator="true" pageIndicatorPlacement="Bottom" visible="true" class="sapUiContentPadding">
+                <pages>
+                    <Image src="https://igualdadanimal.org/app/uploads/2016/08/13901626_10210562513087352_603756917_o.jpg" height="678px" width="1280px" visible="true" densityAware="false"/>
+                    <Image src="https://www.deotramanera.co/sites/default/files/styles/fullcontent/public/recetas/fresas_con_chocoloate_web.jpg?itok=AZkCp9pK" height="678px" width="1280px" visible="true" densityAware="false"/>
+                    <Image src="https://www.verdissimo.com/wp-content/uploads/2020/06/simbologia-del-numero-de-rosas-en-un-ramo-verdissimo.jpg" height="678px" width="1248px" visible="true" densityAware="false"/>
+                </pages>
+            </Carousel>
+        </content>
+        <footer/>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>
